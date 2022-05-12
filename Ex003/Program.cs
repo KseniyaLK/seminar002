@@ -6,12 +6,16 @@
 // 16, 4 -> кратно
 
 Console.WriteLine("введите первое число ");
-int num1 = Console.ReadLine ();
-Console.WriteLine(num1);
+int num1 =Convert.ToInt32(Console.ReadLine ());
+
 Console.WriteLine("введите второе число ");
-int num2 = Console.ReadLine ();
-Console.WriteLine(num2);
-if (num1 % num2) Console.WriteLine("арф@"); 
+int num2 = Convert.ToInt32(Console.ReadLine ());
+int res = num1 % num2;
+if (res == 0) 
+{
+    Console.WriteLine("кратно"); 
+}
+else Console.WriteLine($"не кратно, остаток {res}");
 
 
 

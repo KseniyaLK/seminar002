@@ -10,12 +10,12 @@ int num1 =Convert.ToInt32(Console.ReadLine ());
 
 Console.WriteLine("введите второе число ");
 int num2 = Convert.ToInt32(Console.ReadLine ());
+
 int res = num1 % num2;
-if (res == 0) 
-{
-    Console.WriteLine("кратно"); 
-}
-else Console.WriteLine($"не кратно, остаток {res}");
+// if (res == 0) Console.WriteLine("кратно"); 
+// else Console.WriteLine($"не кратно, остаток {res}");
 
+if (num1%num2 == 0) Console.WriteLine("кратно"); 
+else Console.WriteLine($"не кратно, остаток {num1%num2}");
 
-
+//Console.WriteLine(num1 % num2 == 0 ? $"Кратно" : $"Остаток от деления {result}");

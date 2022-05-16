@@ -8,11 +8,11 @@ int number = new Random().Next(100, 1000);
 Console.WriteLine($"Number = {number}");
 
 int number1 = number/100;
-Console.WriteLine(number1);
+//Console.WriteLine(number1);
 
 int number2 = number%10;
 // while (number / p > 9) p *= 100;
 // int y = number % p;
-Console.WriteLine(number2);
-Console.WriteLine($"Итог {number1}{number2}");
+//Console.WriteLine(number2);
+Console.WriteLine($"Результат задачи {number1}{number2}");
 
